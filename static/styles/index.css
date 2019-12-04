@@ -60,6 +60,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     overflow: hidden;
+    font-family: Merriweather;
 }
 
 .first-article {
@@ -99,7 +100,7 @@
 }
 
 .third-content {
-    background-color: white;
+    background-color: #FFF8E8;
     color: black;
 }
 
