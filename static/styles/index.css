@@ -8,7 +8,12 @@
 }
 
 .part-title {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 10px;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
 }
 
 .big-word {
@@ -42,29 +47,124 @@
     background: linear-gradient(to left bottom, transparent 50%, #dfdfdf, #ababab);
 }
 
-.article-list{
+.article-list {
     display: flex;
-    margin-top: 20px;
+    margin: 20px 10% 0 10%;
     justify-content: space-between;
 }
 
-.articles{
-    width: 150px;
-    height: 90px;
+.articles {
+    width: 214px;
+    height: 142px;
     border: 5px solid white;
     background-size: contain;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 
-.first-article{
-    background-image: url(./static/pics/empire-state.png);
+.first-article {
+    background-image: url(../pics/empire-state.png);
 }
 
-.second-article{
-    background-image: url(./static/pics/midtown.png);
+.second-article {
+    background-image: url(../pics/midtown.png);
 }
 
-.third-article{
-    background-image: url(./static/image/liberty.png);
+.third-article {
+    background-image: url(../pics/liberty.png);
 }
 
+.articles:hover .content {
+    display: block;
+}
+
+.content {
+    position: relative;
+    display: none;
+    width: 189px;
+    height: 112px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-family: serif;
+}
+
+.first-content {
+    background-color: rgba(58, 1, 132, 0.44);
+}
+
+.second-content {
+    z-index: 1;
+}
+
+.third-content {
+    background-color: white;
+    color: black;
+}
+
+.black-box-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -80px;
+    left: -65px;
+    transform: rotate(41deg);
+    background-color: rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+
+.content-title {
+    padding: 5px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.content-underline {
+    border-bottom: 1px solid rgba(0, 0, 0, .4);
+}
+
+.content p {
+    font-style: italic;
+}
+
+.content .link-button {
+    margin-top: 10px;
+}
+
+.content a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    background-color: black;
+}
+
+.multi-layout-module::before {
+    content: "";
+    position: absolute;
+    top: -32px;
+    right: 300px;
+    border: 16px solid;
+    border-color: transparent transparent white transparent;
+}
+
+.multi-layout-module {
+    position: relative;
+    width: 500px;
+    top: -20px;
+    margin: 0 auto;
+    margin-top: 75px;
+    padding: 10px 5px;
+    border-radius: 7px;
+    background-color: #fff;
+    font-family: serif;
+    font-size: 16px;
+    column-count: 3;
+    column-gap: 12px;
+    word-break: break-all;
+    
+}
+
+.multi-layout-module p{
+    margin-bottom: 6px;
+}
