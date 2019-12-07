@@ -3,20 +3,14 @@
     padding: 0;
 }
 
-.bg {
+body {
     background-image: linear-gradient(to top left, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    width: 65%;
+    margin-left: 17.5%;
 }
 
-.part-title {
-    position: relative;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
-}
-
-.big-word {
+.poster-title {
+    margin-top: 50px;
     font-size: 92px;
     letter-spacing: 2.4px;
     text-shadow: 0 5px 2px black, 0 6px 2px black, 0 7px 2px black, 0 8px 2px black, 0 9px 2px black, 0 10px 2px black, 0 11px 2px black, 0 12px 2px black, 0 13px 2px black, 0 20px 10px black;
@@ -30,6 +24,7 @@
     transform: translate(-50%, 0);
     width: 385px;
     height: 80px;
+    margin-top: 50px;
     border-radius: 4px 0 4px 4px;
     padding: 25px 30px;
     color: #008001;
@@ -49,7 +44,7 @@
 
 .article-list {
     display: flex;
-    margin: 20px 10% 0 10%;
+    margin: 90px 10% 0 10%;
     justify-content: space-between;
 }
 
@@ -60,18 +55,18 @@
     background-size: contain;
     background-repeat: no-repeat;
     overflow: hidden;
-    font-family: Merriweather;
+    font-family: Merriweather,serif;
 }
 
-.first-article {
+.empire-state {
     background-image: url(../pics/empire-state.png);
 }
 
-.second-article {
+.midtown {
     background-image: url(../pics/midtown.png);
 }
 
-.third-article {
+.new-york {
     background-image: url(../pics/liberty.png);
 }
 
@@ -85,21 +80,21 @@
     width: 189px;
     height: 112px;
     padding: 15px;
-    color: white;
     text-align: center;
     font-size: 12px;
     font-family: serif;
+    color: white;
 }
 
-.first-content {
+.empire-state .article-content {
     background-color: rgba(58, 1, 132, 0.44);
 }
 
-.second-content {
+.midtown .article-content {
     z-index: 1;
 }
 
-.third-content {
+.new-york .article-content {
     background-color: #FFF8E8;
     color: black;
 }
@@ -122,7 +117,7 @@
 }
 
 .content-underline {
-    border-bottom: 1px solid rgba(0, 0, 0, .4);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .content p {
@@ -134,13 +129,13 @@
 }
 
 .content a {
+    padding: 5px 15px 5px 15px;
     text-decoration: none;
     color: white;
-    padding: 5px 15px 5px 15px;
     background-color: black;
 }
 
-.multi-layout-module::before {
+.french-article::before {
     content: "";
     position: absolute;
     top: -32px;
@@ -149,23 +144,22 @@
     border-color: transparent transparent white transparent;
 }
 
-.multi-layout-module {
+.french-article {
     position: relative;
     width: 500px;
     top: -20px;
     margin: 0 auto;
-    margin-top: 75px;
-    padding: 10px 5px;
+    margin-top: 105px;
+    padding: 10px 10px;
     border-radius: 7px;
-    background-color: #fff;
     font-family: serif;
     font-size: 16px;
     column-count: 3;
     column-gap: 12px;
     word-break: break-all;
-    
+    background-color: #fff;
 }
 
-.multi-layout-module p{
+.french-article p{
     margin-bottom: 6px;
 }
